@@ -1,0 +1,353 @@
+// Import GOV.UK elements, this will import the frontend toolkit and some base styles.
+// Take a look in _govuk-elements.scss to see which files are imported.
+@import 'govuk-elements';
+
+// Take a look at patterns.scss to see which files are imported.
+@import 'patterns';
+
+// If you need to create a page as part of your journey, but without GOV.UK branding
+// See localhost:3000/examples/unbranded/
+.unbranded {
+  background: $white;
+  // Use the universal selector and !important to *ALWAYS OVERRIDE* GDS Transport
+  * {
+    font-family: Arial !important;
+  }
+  // Remove GOV.UK footer styles
+  #footer {
+    border: 0;
+    background: $white;
+  }
+}
+
+// Related items
+// (These styles will be moved to GOV.UK elements, duplicating here for now.)
+.govuk-related-items {
+  margin-top: $gutter;
+  border-top: 10px solid $govuk-blue;
+  padding-top: 5px;
+
+  .heading-medium {
+    margin-top: 0.3em;
+    margin-bottom: 0.5em
+  }
+
+  li {
+    margin-bottom: 10px;
+    list-style-type: none;
+  }
+}
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+#global-header {
+  .header-wrapper {
+    max-width:1020px;
+  }
+}
+
+.nested-menu-widget {
+  background-color: $panel-colour;
+  border-bottom:1px solid #979797;
+  overflow:auto;
+  .top-nav {
+    max-width:1020px;
+    margin:0 auto;
+  }
+  .categories-list {
+    margin-left:30px;
+    li {
+      display:inline-block;
+      float: left;
+      padding:15px;
+      border-right:1px solid #979797;
+    }
+  }
+}
+
+.clear {
+  clear:both;
+}
+
+.search-area {
+  height:76px;
+  overflow:auto;
+  background-color:#005ea5;
+  .searchy {
+    margin-top:20px;
+    span.search-label {
+      margin-left:30px;
+      margin-right:10px;
+      color:#fff;
+    }
+  }
+  .search-button {
+    height:35px;
+    background-color:#333;
+    color:#fff;
+
+    border-color:#333;
+  }
+  .stuff {
+
+    margin:0 auto;
+    max-width:1020px;
+    p {
+      margin:20px 0;
+    }
+  }
+
+
+  .scope-box {
+
+    background-color:#DEE0E2;
+    border:1px solid #DEE0E2;
+    height:25px;
+    padding:4px;
+    display:inline-block;
+    a {
+      text-decoration:none;
+    }
+  }
+}
+
+#content.home-page {
+  img {
+    display:inline-block;
+    max-width:100%;
+  }
+}
+
+
+
+.form-control.search {
+  width:440px;
+}
+
+.home-page-story-link {
+  margin-bottom:0;
+  a {
+    font-weight:bold;
+  }
+}
+
+.home-news-story {
+  border-bottom:1px solid #bfc1c3;
+}
+
+.news-thumbnail {
+  padding:10px 0;
+  display:inline-block;
+  float: left;
+  margin-right:10px;
+  img {
+    width: 100px;
+  }
+}
+
+.apps {
+  font-size:14px;
+  line-height:1.4;
+  margin-bottom:20px;
+}
+
+.news-content {
+  padding:10px 0;
+  a {
+    font-weight:bold;
+  }
+  time {
+    display:block;
+    color: #666;
+    font-size:14px;
+  }
+}
+
+.smaller-text {
+  margin-top:0;
+  font-size:14px;
+  time {
+    display:block;
+    color: #666;
+  }
+}
+
+.intra-h1 {
+  font-size:36px;
+  font-weight:bold;
+  margin:24px 0;
+}
+
+.home-page-h2 {
+  font-size:24px;
+  font-weight:bold;
+  border-bottom:1px solid #333;
+  margin-bottom:20px;
+}
+
+.my-agency {
+  margin-top:95px;
+}
+
+.archive-panel {
+  background-color:#DEE0E2;
+  p {
+    padding:15px;
+  }
+}
+
+div.guidance {
+  /* */
+  h3 {
+    font-weight:bold;
+  }
+  .children-list {
+    h4 {
+      font-size:16px;
+    }
+    li {
+      margin-left:30px;
+      list-style-type:disc;
+      font-size:16px;
+    }
+  }
+}
+
+/* Guidance with children showing on G&F page */
+.second-row {
+  margin-top:60px; /* change to 30px if hiding children */
+}
+/*
+  Hide children...
+  .children-list {
+    display:none;
+  }
+*/
+
+
+.breadcrumbs-list {
+  display:block;
+  overflow:auto;
+  padding:15px 0;
+  font-size:16px;
+  margin-left:30px;
+  li {
+    display:inline;
+    margin-right:15px;
+  }
+  .separator {
+    background-image:url("/public/v2/images/separator-2x.png");
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 11px;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 6px;
+  }
+}
+
+.left-hand-navigation {
+  a:visited {
+    color:#005ea5;
+  }
+  margin-top:40px;
+  border:1px solid #efefef;
+  border-bottom:0;
+  li {
+    font-size:16px;
+    padding:10px;
+    border-bottom:1px solid #efefef;
+  }
+  .main-section {
+    background-color:$panel-colour;
+    font-weight:bold;
+  }
+  .parent-section {
+    font-weight:bold;
+  }
+  .child {
+    a {
+      margin-left:15px;
+      display:inline-block;
+    }
+  }
+  .child-level-2 {
+    a {
+      margin-left:30px;
+      display:inline-block;
+    }
+  }
+  .child-folder {
+    a {
+      margin-left:15px;
+      font-weight:bold;
+      display:inline-block;
+    }
+  }
+  .current-page {
+    font-weight:bold;
+  }
+}
+.content {
+  h1.page-title {
+    font-size:36px;
+    margin-top:40px;
+    font-weight:bold;
+  }
+
+  h2 {
+    margin:20px 0;
+    font-size:24px;
+    font-weight:bold;
+  }
+
+  h3 {
+    margin:30px 0 15px 0;
+    font-weight:19px;
+    font-weight:bold;
+  }
+
+  ul {
+    li {
+
+    }
+  }
+
+  .page-metadata {
+    margin:20px 0;
+    border:1px solid $panel-colour;
+    padding:10px;
+    font-size:16px;
+  }
+
+}
+
+#header-logo {
+  display:none;
+}
+
+#global-header.laa {
+  background-color:#156c60;
+  .header-wrapper {
+    background-color:#156c60;
+  }
+}
+
+#global-header.opg {
+  background-color:#76b700;
+  .header-wrapper {
+    background-color:#76b700;
+  }
+}
+
+.moj-header {
+  background-color:#333;
+  height:24px;
+  p {
+    max-width:1020px;
+    margin:0 auto;
+    padding:10px 0;
+    color:#fff;
+    font-weight:700;
+  }
+}

@@ -1,0 +1,84 @@
+{% extends "govuk_template.html" %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
+
+{% block mainNav %}
+<div class="nested-menu-widget">
+  <div class="top-nav">
+    <ul class="categories-list">
+
+      <li class="category-item not-current ">
+        <a href="/intra-a/index" class="category-link">
+          Home  </a>
+
+        <ul class="children-list">
+            </ul>
+      </li>
+
+      <li class="category-item not-current ">
+        <a href="#" class="category-link">
+          News  </a>
+
+        <ul class="children-list">
+            </ul>
+      </li>
+
+      <li class="category-item not-current main-nav-events">
+        <a href="#" class="category-link">
+          Events  </a>
+
+        <ul class="children-list">
+            </ul>
+      </li>
+
+      <li class="category-item current main-nav-guidance">
+        <a href="/intra-a/guidance1" class="category-link">
+          Guidance &amp; forms  </a>
+
+      </li>
+
+      <li class="category-item current main-nav-guidance">
+        <a href="/intra-a/my-work" class="category-link">
+          My work  </a>
+
+
+      </li>
+
+      <li class="category-item not-current main-nav-about-us">
+        <a href="#" class="category-link">
+          About us  </a>
+
+        <ul class="children-list">
+            </ul>
+      </li>
+
+      <li class="category-item not-current main-nav-blog">
+        <a href="https://intranet.justice.gov.uk/blog/" class="category-link">
+          Blog  </a>
+
+        <ul class="children-list">
+            </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+{% endblock %}
+
+{% block cookie_message %}
+  <p>{{cookieText | safe }}</p>
+{% endblock %}
+
+{% block proposition_header %}
+  {% include "includes/propositional_navigation.html" %}
+{% endblock %}
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% block body_end %}
+  {% include "includes/scripts.html" %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}
