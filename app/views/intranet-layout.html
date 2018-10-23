@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block header %}
+  {{ govukHeader({
+    homepageUrl: "/",
+    serviceName: serviceName,
+    serviceUrl: "/",
+    containerClasses: "govuk-width-container"
+  }) }}
+  {% include "includes/search.html" %}
+  {% include "includes/menu.html" %}
+  {% include "includes/phase-banner.html" %}
+{% endblock %}
