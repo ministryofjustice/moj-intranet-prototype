@@ -1,0 +1,249 @@
+
+{% extends "intranet-layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<style type="text/css">
+  
+  article.featured .featured-wrapper {
+    padding: 30px;
+    display: inline-block;
+}
+
+article.featured {
+    background: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+article {
+    word-wrap: break-word;
+}
+
+article.featured h2 {
+    margin-top: 0px;
+}
+
+article.featured h2 {
+    margin-bottom: 0.8333333333em;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+article.featured h2 a {
+    text-decoration: none;
+}
+
+article.featured .image {
+    padding-left: 30px;
+    width: 70%;
+    float: right;
+}
+
+.read-more {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+.promo-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
+
+</style>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+    <br />
+      <h1 class="govuk-heading-xl">
+        Latest news
+      </h1>
+    </div>
+  </div>
+
+  <div class="column-full">
+        <article class="featured post-11199 post type-post status-publish format-standard has-post-thumbnail hentry category-product-changes category-vision-and-plans">
+          <div class="featured-wrapper">
+            <div class="image">
+                    <a href="https://insidegovuk.blog.gov.uk/2018/09/10/how-were-improving-publishing-times/"><img width="620" height="452" src="https://insidegovuk.blog.gov.uk/wp-content/uploads/sites/24/2018/09/IMG_8429-e1536583873585-620x452.jpg" class="attachment-large size-large wp-post-image" alt="Steve looking at the publishing pipeline on a whiteboard" srcset="https://insidegovuk.blog.gov.uk/wp-content/uploads/sites/24/2018/09/IMG_8429-e1536583873585-620x452.jpg 620w, https://insidegovuk.blog.gov.uk/wp-content/uploads/sites/24/2018/09/IMG_8429-e1536583873585-310x226.jpg 310w, https://insidegovuk.blog.gov.uk/wp-content/uploads/sites/24/2018/09/IMG_8429-e1536583873585-768x560.jpg 768w, https://insidegovuk.blog.gov.uk/wp-content/uploads/sites/24/2018/09/IMG_8429-e1536583873585-435x317.jpg 435w" sizes="(max-width: 620px) 100vw, 620px"></a>
+                  </div>
+            <div class="text">
+              <h2 class="entry-title visible-desktop hidden-tablet"><a href="https://insidegovuk.blog.gov.uk/2018/09/10/how-were-improving-publishing-times/">How we're improving publishing times</a></h2>
+              <div class="entry-summary">
+                <p>For the past few weeks, we've been working on making improvements to the GOV.UK publishing pipeline. Here's what we've done so far and what's coming next.</p>
+              </div>
+              <a class="read-more" href="https://insidegovuk.blog.gov.uk/2018/09/10/how-were-improving-publishing-times/">Read more</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+       <div class="promo-image">
+          <div class="promo-content">
+            <a href="/guidance/grenfell-tower-fire-june-2017-support-for-people-affected">
+              <img alt="" src="https://assets.publishing.service.gov.uk/frontend/homepage/grenfell-tower-support-06932b160e2a050a3c3cf663e03edcb389e4d20829442d51149f1783138c67f4.png">
+              <h3>Grenfell Tower fire</h3>
+            </a>
+            <p>Find out about the support available.</p>
+          </div>
+        </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+       <div class="promo-image">
+              <div class="promo-content">
+                <a href="/government/topical-events/syria-uk-military-action">
+                  <img alt="" src="https://assets.publishing.service.gov.uk/frontend/homepage/tornado-syria-86f83c8fa752f2af683b99fa997d4a044ad35d61e164fc8d5754c84de894acab.jpg">
+                  <h3>Syria: military action</h3>
+                </a>
+                <p>
+                  Find out how the Syrian regime's chemical weapons capability is being degraded.
+                </p>
+              </div>
+            </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+       <div class="promo-image">
+              <div class="promo-content">
+                <a href="/government/brexit">
+                  <img alt="" src="https://assets.publishing.service.gov.uk/frontend/homepage/leaving-the-eu-bc9992ee672a30d8e8a3e195c9afa750e618748130a4e073a593ba36dfc29af9.jpg">
+                  <h3>The UK and the EU</h3>
+                </a>
+                <p>
+                  Read the latest updates and information as the UK prepares to leave the EU.
+                </p>
+              </div>
+            </div>
+    </div>
+  </div>
+
+ <br />
+  <hr style="border-bottom: 1px solid #bfc1c3; border-top: 0px; border-right:0px; border-left: 0px;">
+  <br />
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        All news
+      </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+    <!--<p style="font-size:16px;">Filter by</p>-->
+    <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Month
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Any</option>
+    <option value="updated">October 2018</option>
+    <option value="views">September 2018</option>
+    <option value="comments">August 2018</option>
+  </select>
+</div>
+
+    <div class="govuk-form-group">
+  <label class="govuk-label" for="name">
+    Keywords
+  </label>
+  <input class="govuk-input" id="name" name="name" type="text">
+  <br />
+  <br />
+  <br />
+  <button type="submit" class="govuk-button">
+  
+  Filter
+</button>
+</div>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          <div class="promo-image">
+                <div class="promo-content">
+                  <a href="/government/brexit">
+                    <img alt="" src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/default_news_organisation_image_data/file/243/s300_s300_Fleetbank_House.jpg">
+                  </a>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <a href="/government/brexit">
+            <h3 style="margin-top:0px;">Grenfell Tower fire</h3>
+          </a>
+          <p>
+          Read the latest updates and information as the UK prepares to leave the EU.
+          </p>
+        </div>
+      </div>
+
+      <hr style="border-bottom: 1px solid #bfc1c3; border-top: 0px; border-right:0px; border-left: 0px;">
+
+      <div class="govuk-grid-row">
+       <br />
+        <div class="govuk-grid-column-one-third">
+          <div class="promo-image">
+                <div class="promo-content">
+                  <a href="/government/brexit">
+                    <img alt="" src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/80355/s300_Close_up_of_baby_in_car_seat.jpg">
+                  </a>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <a href="/government/brexit">
+            <h3 style="margin-top:0px;">Syria: military action</h3>
+          </a>
+          <p>
+            Read the latest updates and information as the UK prepares to leave the EU.
+          </p>
+        </div>
+      </div>
+
+      <hr style="border-bottom: 1px solid #bfc1c3; border-top: 0px; border-right:0px; border-left: 0px;">
+
+      <div class="govuk-grid-row">
+       <br />
+        <div class="govuk-grid-column-one-third">
+          <div class="promo-image">
+                <div class="promo-content">
+                  <a href="/government/brexit">
+                    <img alt="" src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/default_news_organisation_image_data/file/102/s300_Main-building-gov.uk.jpg">
+                  </a>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="govuk-grid-column-two-thirds">
+          <a href="/government/brexit">
+            <h3 style="margin-top:0px;">The UK and the EU</h3>
+          </a>
+          <p>
+          Read the latest updates and information as the UK prepares to leave the EU.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <br />
+  <br />
+  <br />
+
+{% endblock %}
