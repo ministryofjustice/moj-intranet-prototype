@@ -1,13 +1,40 @@
+<script type="text/javascript">
+
+function setNavigation() {
+    var path = window.location.pathname;
+    console.log(path);
+    path = path.replace(/\/$/, "");
+    console.log(path);
+    path = decodeURIComponent(path);
+    console.log(path);
+
+    console.log(path);
+
+    $(".menu a").each(function () {
+        var href = $(this).attr('href');
+        href = "/v1/" + href;
+        if (path.substring(0, href.length) === (href)) {
+            $(this).closest('li').addClass('current-menu-item');
+            $(this).closest('li').addClass('current_page_item');
+        }
+    });
+}
+
+window.onload = setNavigation;
+
+</script>
+
 <nav class="main-nav-bar">
    <div  style="margin: 0 auto;max-width: 960px;">
       <div class="menu-hq-menu-container">
          <ul id="menu-hq-menu" class="menu">
-            <li id="menu-item-121163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-115 current_page_item menu-item-121163"><a href="#">Home</a></li>
-            <li id="menu-item-121164" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121164"><a href="https://intranet.justice.gov.uk/newspage/">News</a></li>
-            <li id="menu-item-121165" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121165"><a href="https://intranet.justice.gov.uk/events/">Events</a></li>
-            <li id="menu-item-121174" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121174"><a href="/guidance">Guidance &amp; forms</a></li>
-            <li id="menu-item-121173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-121173"><a href="/about-us">About us</a></li>
-            <li id="menu-item-121175" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-121175"><a href="https://intranet.justice.gov.uk/blog/">Blog</a></li>
+            <li id="menu-item-121163" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home page_item"><a href="index-2">Home</a></li>
+            <li id="menu-item-121164" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="news">News</a></li>
+            <li id="menu-item-121165" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="events">Events</a></li>
+            <li id="menu-item-121174" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="hr">HR</a></li>
+            <li id="menu-item-121174" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/guidance">Guidance &amp; forms</a></li>
+            <li id="menu-item-121173" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/about-us">About us</a></li>
+            <li id="menu-item-121175" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="blog">Blog</a></li>
          </ul>
       </div>
    </div>

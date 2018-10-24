@@ -14,5 +14,50 @@ $govuk-global-styles: true;
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
+ article.featured .featured-wrapper {
+    padding: 30px;
+    display: inline-block;
+}
 
+article.featured {
+    background: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+article {
+    word-wrap: break-word;
+}
+
+article.featured h2 {
+    margin-top: 0px;
+}
+
+article.featured h2 {
+    margin-bottom: 0.8333333333em;
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+article.featured h2 a {
+    text-decoration: none;
+}
+
+article.featured .image {
+    padding-left: 30px;
+    width: 70%;
+    float: right;
+}
+
+.read-more {
+  font-size: 19px;
+  font-weight: bold;
+}
+
+
+.promo-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 15px;
+}
 
